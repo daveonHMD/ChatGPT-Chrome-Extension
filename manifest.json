@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "DesToolsAi Extension",
+    "version": "1.0",
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["html.js"]
+      }
+    ],
+    "permissions": ["activeTab"]
+  }
+  
